@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111827;
+    color: #fff;
+    padding: 0 20px 40px;
+  }
+  
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(17, 24, 39, 0.6); 
+  backdrop-filter: blur(12px);      
+  -webkit-backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0 0 12px 12px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .site-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* Kategori */
+  .kategori-list {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .kategori-btn {
+    padding: 8px 18px;
+    border: none;
+    background-color: #374151;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .kategori-btn:hover {
+    background-color: #4b5563;
+  }
+  
+  .kategori-btn.active {
+    background-color: #2563eb;
+  }
+  
+ 
+  .swiper {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    padding: 0 5px;
+  }
+
+
+  .produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  
+  .produk {
+    background-color: #1f2937;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .produk:hover {
+    transform: translateY(-5px);
+    background-color: #374151;
+  }
+  
+  .nama-produk {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .produk img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .produk a:hover img {
+    opacity: 0.9;
+  }
+  
+
+@media (max-width: 768px) {
+    .swiper-slide img {
+      height: 180px;
+      padding: 0 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-slide img {
+      height: 150px;
+      padding: 0 1px;
+    }
+  }
+  
